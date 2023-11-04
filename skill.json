@@ -1,0 +1,85 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "en-US": {
+          "summary": "RadioMv is a Online Christian Radio Network.",
+          "examplePhrases": [
+            "Alexa, open radio m. v.",
+            "Alexa, ask radio m. v. English stream",
+            "Alexa, ask radio m. v. stream list"
+          ],
+          "keywords": [
+            "radiomv",
+            "christian radio",
+            "gospel",
+            "live radio stream",
+            "radio stream",
+            "russian radio",
+            "spanish radio"
+          ],
+          "name": "RadioMv",
+          "description": "RadioMv is a Online Christian Radio Network. Hundreds of Slavic, Spanish, German and American s are listening RadioMv around the world. Since it\u0027s launch in February 2006 the program has been played in more than 136 countries of the world. \"You give them something to eat.\" ~ Luke 9: 13",
+          "smallIconUri": "file://assets/images/en-US_smallIconUri.png",
+          "updatesDescription": "-Update store icon\n-Update streaming URL links",
+          "largeIconUri": "file://assets/images/en-US_largeIconUri.png"
+        }
+      },
+      "automaticDistribution": {
+        "isActive": false
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "{\"ask_dist_username\":\"\",\"ask_dist_password\":\"\",\"ask_dist_testing_instructions\":\"Hi Alexa Team,\\n\\nHere\u0027s the link where you can find the letter from the president of RadioMv, Edward Natekin that allowing me to use the stream links I used in this skill. Hope this helps. Thanks!\\n\\nhttps://drive.google.com/file/d/1hVHCxI1K6S_rgp4r0Dfq45nDHnX1clVh/view?usp\u003dsharing\"}",
+      "category": "STREAMING_SERVICE",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:us-east-1:459022167164:function:cecd45b9-4dd1-4f24-a147-f1c6e904be09:Release_0"
+        },
+        "interfaces": [
+          {
+            "type": "AUDIO_PLAYER"
+          }
+        ],
+        "regions": {
+          "EU": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:eu-west-1:459022167164:function:cecd45b9-4dd1-4f24-a147-f1c6e904be09:Release_0"
+            }
+          },
+          "NA": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:us-east-1:459022167164:function:cecd45b9-4dd1-4f24-a147-f1c6e904be09:Release_0"
+            }
+          },
+          "FE": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:us-west-2:459022167164:function:cecd45b9-4dd1-4f24-a147-f1c6e904be09:Release_0"
+            }
+          }
+        }
+      }
+    },
+    "manifestVersion": "1.0",
+    "permissions": [],
+    "privacyAndCompliance": {
+      "allowsPurchases": false,
+      "locales": {
+        "en-US": {
+          "termsOfUseUrl": "https://radiomv.com/en/about-us/",
+          "privacyPolicyUrl": "https://radiomv.com/en/about-us/"
+        }
+      },
+      "containsAds": false,
+      "isExportCompliant": true,
+      "isChildDirected": false,
+      "shoppingKit": {
+        "isShoppingActionsEnabled": false,
+        "isAmazonAssociatesOnAlexaEnabled": false
+      },
+      "usesPersonalInfo": false
+    }
+  }
+}
